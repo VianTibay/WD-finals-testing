@@ -117,4 +117,4 @@ WD-ProjectName
 |-|-|-|
 | Pinterest |This purpose statement helps frame the reference section as a valuable part of your README, showcasing where ideas and knowledge have been sourced from while giving credit to their creators. Adjust the statement to fit the specific context and resources relevant to your project.|https://ph.pinterest.com/ |
 | Youtube |Integrating YouTube videos into your website can enhance user engagement, enrich content offerings, improve SEO, build trust and credibility, and facilitate social sharing.|[YouTube](https://www.youtube.com/)  |
-| W3schools |The use of W3Schools ensures that WD-Finals benefits from reliable information and guidelines in web development, contributing to the project's quality and adherence to established standards.|[W3School] https://www.w3schools.com/  |
+| W3schools |The use of W3Schools ensures that WD-Finals benefits from reliable information and guidelines in web development, contributing to the project's quality and adherence to established standards.|[W3School](https://www.w3schools.com/)  |
