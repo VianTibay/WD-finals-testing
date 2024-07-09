@@ -9,7 +9,7 @@
     <img src="./assets/img/sh.gif" alt="Rotov" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Depende sa gawa to par</h3>
+  <h3 align="center">Final Project Personal Website</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
@@ -20,7 +20,7 @@
 
 <!-- TODO: Change the zyx-0314 into your github username  -->
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=VianTibay/WD-Template-Project)
+![](https://visit-counter.vercel.app/counter.png?page=VianTibay/WD-finals)
 
 ---
 
@@ -57,19 +57,18 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-The main goal of my website is provide a 2 features
+The main goal of my website is provide a Personal Website v.2
 
-Guiding Question:
+<!-- Guiding Question:
 - who will benefit most from project?
 - What specific issues or challenges are addressed?
 - What is the structure of the codebase (e.g., folders, modules, components)?
-- Are there specific frameworks or libraries that the project relies on?
+- Are there specific frameworks or libraries that the project relies on? -->
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
 - MultiPage Website
-- 2 Features webpage
 
 ### Technology
 <!-- TODO: List of Technology Used -->
@@ -116,4 +115,6 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Pinag kuhanan mo |Anong purpose mo bat mo siya kinuha | link mo |
+| Pinterest |This purpose statement helps frame the reference section as a valuable part of your README, showcasing where ideas and knowledge have been sourced from while giving credit to their creators. Adjust the statement to fit the specific context and resources relevant to your project.|https://ph.pinterest.com/ |
+| Youtube |Integrating YouTube videos into your website can enhance user engagement, enrich content offerings, improve SEO, build trust and credibility, and facilitate social sharing.|[YouTube](https://www.youtube.com/)  |
+| W3schools |The use of W3Schools ensures that WD-Finals benefits from reliable information and guidelines in web development, contributing to the project's quality and adherence to established standards.|[W3School] https://www.w3schools.com/  |
