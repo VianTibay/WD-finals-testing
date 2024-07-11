@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Smooth Transition Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .content {
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .content.fade-in {
+            opacity: 1;
+        }
+
+        .box {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>My Website</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index">Home</a></li>
+                    <li><a href="news">News</a></li>
+                    <li><a href="about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="content" id="content">
+        <!-- Dynamic content will be loaded here -->
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const contentContainer = document.getElementById('content');
+
+            const pages = {
+                index: `
+                    <div class="box">
+                        <h2>Welcome to the Home Page</h2>
+                        <p>This is the content of the home page.</p>
+                    </div>
+                `,
+                news: `
+                    <div class="box">
+                        <h2>hello</h2>
+                        <p>This is the content of the news page.</p>
+                    </div>
+                        <h1>hello world </h1>
+                `,
+                about: `
+                    <div class="box">
+                        <h2>About Us</h2>
+                        <p>This is the content of the about page.</p>
+                    </div>
+                `
+            };
+
+            function loadPage(page) {
+                contentContainer.classList.remove('fade-in');
+                setTimeout(() => {
+                    contentContainer.innerHTML = pages[page];
+                    contentContainer.classList.add('fade-in');
+                }, 500);
+            }
+
+            function handleNavigation(event) {
+                event.preventDefault();
+                const page = event.target.getAttribute('href');
+                history.pushState(null, null, page);
+                loadPage(page);
+            }
+
+            window.addEventListener('popstate', function() {
+                loadPage(location.pathname.substring(1) || 'home');
+            });
+
+            document.querySelectorAll('.nav a').forEach(link => {
+                link.addEventListener('click', handleNavigation);
+            });
+
+            loadPage(location.pathname.substring(1) || 'home');
+        });
+    </script>
+</body>
+</html>
